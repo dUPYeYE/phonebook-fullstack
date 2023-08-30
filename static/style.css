@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Fira Code');
+
+* {
+  font-family: Fira Code;
+  font-weight: 600;
+  background-color: #282a36;
+  border-color: #ff79c6;
+  color: #f8f8f2;
+}
+
+img {
+  padding-top: 30px;
+}
+
+h1, h4 {
+  color: #ff79c6;
+  font-weight: 900;
+}
+
+h2 {
+  color: #ffb86c;
+  font-size: 185%;
+  font-weight: 900;
+}
+
+h3 {
+  color: #bd93f9;
+  font-weight: 900;
+}
+
+table {
+  width: 100%;
+  font-size: small;
+}
+
+table, th, td {
+  border: 2px solid #ff79c6;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+input {
+  width: 20vw;
+  margin-bottom: 5px;
+}
+
+#content {
+  max-width: 1080px;
+  margin: 0 auto !important;
+	float: none !important; 
+  min-height: 65vh;
+}
+
+.message {
+  font-style: italic;
+}
+
+#navbar {
+  background-color: #2e303d;
+  height: 5vh;
+  position: relative;
+}
+
+#navbar * {
+  background-color: #2e303d;
+}
+
+#navbar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar > ul > li {
+  float: left;
+}
+
+#navbar > ul > li.right {
+  float: right;
+}
+
+#navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: #ff79c6;
+  transition-duration: 150ms;
+}
+
+.basic {
+  color: #f8f8f2;
+}
+
+.highlighted {
+  color: #6272a4;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.td_center {
+  text-align: center;
+}
+
+.small {
+  width: 50%;
+}
+

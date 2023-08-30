@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs', { title: 'Phonebook - Home' }) %>
+  <body onload="loadPartnersTable()">
+    <%- include('partials/navbar.ejs') %>
+
+    <div id="content">
+      <h1><%= title %></h1>
+
+      <script src="/index.js"></script>
+
+      <div class="search-container">
+        <input oninput="loadPartnersTable()" type="search" placeholder="Search for name or phone" name="filter" id="filter">
+      </div>
+
+      <table id="partnersTable" class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Phone number</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="partnersTableBody" />
+      </table>
+
+    </div>
+  </body>
+  <%- include('partials/footer.ejs') %>
+</html>

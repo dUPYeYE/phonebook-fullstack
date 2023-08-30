@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs', { title: 'Phonebook - Edit partner' }) %>
+  <body onload="loadPartnersTable()">
+    <%- include('partials/navbar.ejs') %>
+
+    <div id="content">
+      <h1><%= title %></h1>
+
+      <script src="/index.js"></script>
+
+      <form id="editPartnerForm" data-partner-id="<%= partner.partner_id %>" onsubmit="patchPartner(event)">
+        <p>Firstname: <input type="text" name="fname" value="<%= partner.first_name %>" /></p>
+        <p>Lastname: <input type="text" name="lname" value="<%= partner.last_name %>" /></p>
+        <p>Phone number: <input type="text" name="phonenum" value="<%= partner.phone_number %>" /></p>
+        <p><input type="submit" value="Submit" /></p>
+      </form> 
+    
+    <% if (error == true) { %>
+        <h3 class="err">Failed to validate form</h3>
+    <% } %>
+
+    <% if (completed == true) { %>
+        <h3>Partner added succesfully</h3>
+    <% } %>
+
+
+    </div>
+  </body>
+  <%- include('partials/footer.ejs') %>
+</html>

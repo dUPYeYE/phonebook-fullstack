@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head.ejs', { title: 'Phonebook - Details' }) %>
+  <body onload="loadDetailsTable()">
+    <%- include('partials/navbar.ejs') %>
+
+    <div id="content">
+      <h1><%= title %></h1>
+
+      <script src="/index.js"></script>
+
+      <table id="detailsTable" data-partner-id="<%= id %>" class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Phone number</th>
+          </tr>
+        </thead>
+        <tbody id="detailsTableBody" />
+      </table>
+    </div>
+  </body>
+  <%- include('partials/footer.ejs') %>
+</html>
